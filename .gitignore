@@ -1,2 +1,15 @@
-node_modules/
 .DS_Store
+
+# ルート直下のファイルとディレクトリを許可
+/*
+!/.gitignore
+!/LICENCE
+!/package-lock.json
+!/package.json
+!/README.md
+!/tailwind.config.js
+!/src/
+
+# srcディレクトリ内のファイルを許可
+/src/*
+!/src/**
