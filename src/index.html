@@ -1,0 +1,20 @@
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <!-- https://developer.mozilla.org/ja/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"/>
+  <title>初めてのElectron</title>
+  <link href="./output.css" rel="stylesheet">
+  <script src="./renderer.js"></script>
+</head>
+
+<body class="bg-white dark:bg-black">
+<div id="titleBarContainer draggable">
+  <nav id="titleBar" class="draggable flex align-conter gap-3">
+    <button id="backBtn" class="text-black dark:text-white nonDraggable">戻る</button>
+    <button id="forwardBtn" class="text-black dark:text-white nonDraggable">進む</button>
+    <button id="reloadBtn" class="text-black dark:text-white nonDraggable">再読み込み</button>
+  </nav>
+</div>
+</body>
+</html>

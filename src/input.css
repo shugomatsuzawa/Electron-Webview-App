@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.draggable {
+  app-region: drag;
+}
+
+.nonDraggable {
+  app-region: no-drag;
+}
+
+nav {
+  position: absolute;
+  left: env(titlebar-area-x);
+  top: env(titlebar-area-y);
+  width: env(titlebar-area-width);
+  height: env(titlebar-area-height);
+}
